@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginToMatrackDashboard } from './utils/new_login_dashboard_matrack_rj';
 
-test('Create Geofence', async ({ page }) => {
+test('Delete Circular Geofence', async ({ page }) => {
   // Set timeout for the entire test
   test.setTimeout(120000); // 2 minutes for the entire test
   
