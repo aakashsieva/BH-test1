@@ -1,7 +1,7 @@
 // This is a sample config for what users might be running locally
 const config = {
   testDir: './tests',
-  testMatch: '**/new_matrack_*.js',
+  testMatch: '**/bluehouse_live_*.js',
 
   /* Maximum time one test can run for. */
   timeout: 90 * 1000,
