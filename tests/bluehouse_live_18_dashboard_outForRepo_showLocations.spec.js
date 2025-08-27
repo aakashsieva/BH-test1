@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginToMatrackDashboard } from './utils/new_login_dashboard_matrack_BH';
 
-test('Out For Repo', async ({ page }) => {
+test('Out For Repo - Show Locations', async ({ page }) => {
   // Set timeout for the entire test
   test.setTimeout(600000); // 10 minutes for the entire test
   

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginToMatrackDashboard } from './utils/new_login_dashboard_matrack_demorto';
 
-test('Out For Repo', async ({ page }) => {
+test('Restore To Normal', async ({ page }) => {
   // Set timeout for the entire test
   test.setTimeout(600000); // 10 minutes for the entire test
   
@@ -21,7 +21,7 @@ test('Out For Repo', async ({ page }) => {
   await page.waitForTimeout(10000);
   
   console.log('clicking on device name to expand the column and navigate to the "Restore to normal" button...');
-  await page.getByRole('gridcell', { name: '+ Acct 9000 (861492067947959' }).click();
+  await page.getByRole('gridcell', { name: '+ ACCT 123456-B (861492067898038' }).click();
   await page.getByRole('link', { name: 'Restore To Normal' }).click();
   //await page.getByRole('row', { name: '+ Acct 9000 (861492067947959' }).getByRole('link', { name: 'Restore To Normal' }).click();
   // Wait for the element to be visible and clickable

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginToMatrackDashboard } from './utils/new_login_dashboard_matrack_demorto';
 
-test('Frequent Location', async ({ page }) => {
+test('Mark As Out for Repo', async ({ page }) => {
   // Set timeout for the entire test
   test.setTimeout(600000); // 10 minutes for the entire test
   
@@ -11,11 +11,11 @@ test('Frequent Location', async ({ page }) => {
   // Wait for the dashboard to be fully loaded
   await page.waitForTimeout(60000);
 
-  // Navigate to Frequent Location with better error handling
-  console.log('Attempting to navigate to Frequent Location...');
+  // Navigate to menu with better error handling
+  console.log('Attempting to navigate to Menu...');
   
   // First hover over Reports menu to expand it
-  console.log('Select Section of Frequent Location...');
+  console.log('Select Section ...');
   const frequentLocation = page.locator('.divOutForRepoCard .select2-container').first();
   await frequentLocation.click();
   await page.waitForTimeout(60000); // Wait for menu animation
