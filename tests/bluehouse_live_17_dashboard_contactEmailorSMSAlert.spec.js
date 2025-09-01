@@ -77,7 +77,7 @@ test('Contact Email or SMS Alert', async ({ page }) => {
   await page.locator('#divContactList .editContNames').click();
   await page.waitForTimeout(2000);
   //removing one item from list
-  await page.locator('#pViewContact_43').getByRole('checkbox').check();
+  await page.locator('#pViewContact_47').getByRole('checkbox').check();
   await page.waitForTimeout(3000);
   await page.locator('.EmailviewContact .removeContact').click();
   await page.waitForTimeout(3000);

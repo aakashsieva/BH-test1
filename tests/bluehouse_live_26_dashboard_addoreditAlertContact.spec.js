@@ -74,7 +74,7 @@ test('Add or Edit Alert Contacts', async ({ page }) => {
   await page.waitForTimeout(10000); // Wait for menu animation
   
   //removing one item from list
-  await page.locator('#pViewContact_46').getByRole('checkbox').check();
+  await page.locator('#pViewContact_48').getByRole('checkbox').check();
   await page.waitForTimeout(3000);
   await page.locator('.divSMS .removeContact').click();
   await page.waitForTimeout(3000);

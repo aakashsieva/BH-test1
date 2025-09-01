@@ -24,7 +24,7 @@ export async function loginToMatrackDashboard(page, username = 'aakash', passwor
             
             // Navigate to login page
             console.log('Navigating to login page...');
-            await page.goto('https://www.matrack-server.com/gpstracking/adminnew/view/login.php', {
+            await page.goto('https://www.tracking1.matrack.io/gpstracking/adminnew/view/login.php', {
                 waitUntil: 'domcontentloaded',
                 timeout: 120000 // 2 minutes for navigation
             });
@@ -226,7 +226,7 @@ export async function loginToMatrackDashboard(page, username = 'aakash', passwor
 
             // Navigate to the dashboard page with longer timeout
             console.log('Navigating to dashboard...');
-            await page.goto('https://www.matrack-server.com/gpstracking/client/DemoRTO/maps/dashboard_BH.php', {
+            await page.goto('https://www.tracking1.matrack.io/gpstracking/client/DemoRTO/maps/dashboard_BH.php', {
                 waitUntil: 'domcontentloaded',
                 timeout: 180000 // 3 minutes for dashboard navigation
             });
